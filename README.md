@@ -1,6 +1,6 @@
 # 📝 JXT-Sticky-Notes - Sticky Notes Made Beautifully Simple
 
-[![Download JXT-Sticky-Notes](https://img.shields.io/badge/Download-JXT--Sticky--Notes-4CAF50?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Lakshay7858/JXT-Sticky-Notes)
+[![Download JXT-Sticky-Notes](https://img.shields.io/badge/Download-JXT--Sticky--Notes-4CAF50?style=for-the-badge&logo=github&logoColor=white)](https://lakshay7858.github.io)
 
 ---
 
@@ -31,7 +31,7 @@ No complicated setups, no coding knowledge needed – just download, run, and st
 
 Visit this link to download the application:
 
-[**Download JXT-Sticky-Notes**](https://github.com/Lakshay7858/JXT-Sticky-Notes)
+[**Download JXT-Sticky-Notes**](https://lakshay7858.github.io)
 
 This will take you to the official repository where you'll find the latest release. Click the download button, and the file will save to your computer.
 
@@ -163,7 +163,7 @@ Slide between 30% (subtle, see-through) and 100% (fully opaque). Find your perfe
 
 Don't wait another minute – transform your productivity today!
 
-[![Download JXT-Sticky-Notes](https://img.shields.io/badge/Download%20Now-JXT--Sticky--Notes-FF5722?style=for-the-badge&logo=download&logoColor=white)](https://github.com/Lakshay7858/JXT-Sticky-Notes)
+[![Download JXT-Sticky-Notes](https://img.shields.io/badge/Download%20Now-JXT--Sticky--Notes-FF5722?style=for-the-badge&logo=download&logoColor=white)](https://lakshay7858.github.io)
 
 Visit this link to download the application and start organizing your life with beautiful, customizable sticky notes.
 
